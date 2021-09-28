@@ -9,34 +9,19 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
+      name: "my-first-theme",
+      state: {
+        theme: {
+          menu: [
+            ["Home", "/"],
+            ["Nature", "/category/nature/"],
+            ["Travel", "/category/travel/"],
+            ["Japan", "/tag/japan/"],
+            ["About Us", "/about-us/"]
           ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
+          featured: {
+            showOnList: false,
+            showOnPost: false
           }
         }
       }
@@ -45,7 +30,14 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "http://frontity.local",
+          "postTypes": [
+            {
+              type: "destinations",
+              endpoint: "destinations",
+              archive: "/destinations"
+            }
+          ]
         }
       }
     },
