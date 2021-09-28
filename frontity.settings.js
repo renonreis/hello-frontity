@@ -30,7 +30,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "http://frontity.local",
+          "url": "https://www.renon.dev",
           "postTypes": [
             {
               type: "destinations",
